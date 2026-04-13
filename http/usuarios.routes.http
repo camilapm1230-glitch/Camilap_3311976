@@ -1,0 +1,75 @@
+### GET todos los usuarios
+GET http://localhost:3000/api/usuarios
+
+###
+
+### GET un usuario por ID
+GET http://localhost:3000/api/usuarios/1
+
+###
+
+### POST crear usuario
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+
+{
+  "nombre": "Carlos",
+  "apellido": "Perez",
+  "documento": "123456789",
+  "ciudad": "Bogotá",
+  "rol": "instructor",
+  "correo": "carlos@example.com",
+  "password": "segura123",
+  "telefono": "3001234567",
+  "ficha": "2345678",
+  "tipo_documento": "CC",
+  "sexo": "M",
+  "fecha_nacimiento": "1990-05-15",
+  "jornada": "Diurna",
+  "centro_formacion": "SENA Regional Bogotá",
+  "resultados": "Aprobado",
+  "tipo_instructor": "Contratista",
+  "centro_gestion": "Centro Principal"
+}
+
+###
+
+### PATCH actualizar usuario
+PATCH http://localhost:3000/api/usuarios/1
+Content-Type: application/json
+
+{
+  "ciudad": "Medellín",
+  "telefono": "3109876543"
+}
+
+###
+
+### DELETE eliminar usuario
+DELETE http://localhost:3000/api/usuarios/1
+
+###
+
+### GET todos los logs
+GET http://localhost:3000/api/logs
+
+###
+
+### GET logs de un usuario
+GET http://localhost:3000/api/logs/usuario/1
+
+###
+
+### POST registrar log
+POST http://localhost:3000/api/logs
+Content-Type: application/json
+
+{
+  "usuario_id": 1,
+  "accion": "inicio_sesion"
+}
+
+###
+
+### DELETE eliminar log
+DELETE http://localhost:3000/api/logs/1
