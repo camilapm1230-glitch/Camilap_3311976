@@ -5,6 +5,7 @@ import indexRoutes from "./routes/index.routes.js";
 import usuariosRoutes from "./routes/usuarios.routes.js";
 import logAccesosRoutes from "./routes/log_accesos.routes.js";
 
+
 const app = express();
 
 // Middlewares
